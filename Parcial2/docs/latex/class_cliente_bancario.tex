@@ -1,0 +1,98 @@
+\doxysection{Cliente\+Bancario Class Reference}
+\hypertarget{class_cliente_bancario}{}\label{class_cliente_bancario}\index{ClienteBancario@{ClienteBancario}}
+
+
+Clase que representa un cliente bancario.  
+
+
+
+
+{\ttfamily \+\#include $<$Cliente\+Bancario.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cliente_bancario_aaf61c53c6dbaa5e4dafff062d33f3138}\label{class_cliente_bancario_aaf61c53c6dbaa5e4dafff062d33f3138} 
+{\bfseries Cliente\+Bancario} (std::\+string nombre, std::\+string cedula)
+\item 
+void \doxymbox{\hyperlink{class_cliente_bancario_ae38d151aaa290de1b592badb9bc014c1}{depositar}} (float valor)
+\begin{DoxyCompactList}\small\item\em Deposita una cantidad de dinero en la cuenta del cliente. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cliente_bancario_a96ea1b8b5250c4a4ea7058e3498b2ddf}{retirar}} (float valor)
+\begin{DoxyCompactList}\small\item\em Retira una cantidad de dinero de la cuenta del cliente. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{class_cliente_bancario_a68e0da7769ca9badcc0521f0a1460ecf}{obtener\+Saldo}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el saldo actual de la cuenta del cliente. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{class_cliente_bancario_adab72b7455955db44d55ada62af4176b}{promedio\+Transacciones}} () const
+\begin{DoxyCompactList}\small\item\em Calcula el promedio de las transacciones realizadas por el cliente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa un cliente bancario. 
+
+\label{doc-func-members}
+\Hypertarget{class_cliente_bancario_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cliente_bancario_ae38d151aaa290de1b592badb9bc014c1}\index{ClienteBancario@{ClienteBancario}!depositar@{depositar}}
+\index{depositar@{depositar}!ClienteBancario@{ClienteBancario}}
+\doxysubsubsection{\texorpdfstring{depositar()}{depositar()}}
+{\footnotesize\ttfamily \label{class_cliente_bancario_ae38d151aaa290de1b592badb9bc014c1} 
+void Cliente\+Bancario::\+depositar (\begin{DoxyParamCaption}\item[{float}]{valor}{}\end{DoxyParamCaption})}
+
+
+
+Deposita una cantidad de dinero en la cuenta del cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Cantidad de dinero a depositar \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cliente_bancario_a68e0da7769ca9badcc0521f0a1460ecf}\index{ClienteBancario@{ClienteBancario}!obtenerSaldo@{obtenerSaldo}}
+\index{obtenerSaldo@{obtenerSaldo}!ClienteBancario@{ClienteBancario}}
+\doxysubsubsection{\texorpdfstring{obtenerSaldo()}{obtenerSaldo()}}
+{\footnotesize\ttfamily \label{class_cliente_bancario_a68e0da7769ca9badcc0521f0a1460ecf} 
+float Cliente\+Bancario::\+obtener\+Saldo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el saldo actual de la cuenta del cliente. 
+
+\begin{DoxyReturn}{Returns}
+Saldo actual 
+\end{DoxyReturn}
+\Hypertarget{class_cliente_bancario_adab72b7455955db44d55ada62af4176b}\index{ClienteBancario@{ClienteBancario}!promedioTransacciones@{promedioTransacciones}}
+\index{promedioTransacciones@{promedioTransacciones}!ClienteBancario@{ClienteBancario}}
+\doxysubsubsection{\texorpdfstring{promedioTransacciones()}{promedioTransacciones()}}
+{\footnotesize\ttfamily \label{class_cliente_bancario_adab72b7455955db44d55ada62af4176b} 
+float Cliente\+Bancario::\+promedio\+Transacciones (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Calcula el promedio de las transacciones realizadas por el cliente. 
+
+\begin{DoxyReturn}{Returns}
+Promedio de las transacciones, o 0 si no hay transacciones 
+\end{DoxyReturn}
+\Hypertarget{class_cliente_bancario_a96ea1b8b5250c4a4ea7058e3498b2ddf}\index{ClienteBancario@{ClienteBancario}!retirar@{retirar}}
+\index{retirar@{retirar}!ClienteBancario@{ClienteBancario}}
+\doxysubsubsection{\texorpdfstring{retirar()}{retirar()}}
+{\footnotesize\ttfamily \label{class_cliente_bancario_a96ea1b8b5250c4a4ea7058e3498b2ddf} 
+bool Cliente\+Bancario::\+retirar (\begin{DoxyParamCaption}\item[{float}]{valor}{}\end{DoxyParamCaption})}
+
+
+
+Retira una cantidad de dinero de la cuenta del cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Cantidad de dinero a retirar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si el retiro fue exitoso, false si no hay suficiente saldo 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+Cliente\+Bancario.\+h\item 
+src/\+Cliente\+\_\+\+Bancario.\+cpp\end{DoxyCompactItemize}
